@@ -7,19 +7,19 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo URLROOT; ?>">Home</a>
+            <a class="nav-link" style="color:Snow;" href="<?php echo URLROOT; ?>">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo URLROOT; ?>/pages/about">About</a>
+            <a class="nav-link" style="color:Snow;" href="<?php echo URLROOT; ?>/pages/about">About</a>
           </li>
         </ul>
 
          <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo URLROOT; ?>/users/register">Register</a>
+            <a class="nav-link" style="color:Snow;" href="<?php echo URLROOT; ?>/users/register">Register</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo URLROOT; ?>/users/login">Login</a>
+            <a class="nav-link" style="color:Snow;" href="<?php echo URLROOT; ?>/users/login">Login</a>
           </li>
         </ul>
         

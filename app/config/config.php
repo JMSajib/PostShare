@@ -12,4 +12,6 @@
     define('URLROOT','http://localhost/postshare');
     //Site Name
     define('SITENAME', 'PostShare');
+    //Version
+    define('APPVERSION', '1.0.0');
 ?>
