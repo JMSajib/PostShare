@@ -1,5 +1,5 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
-
+    <?php flash('post_added') ?>
     <div class="row mb-3">
         <div class="col-md-6">
             <h1>Posts</h1>
@@ -14,9 +14,9 @@
         <div class="card card-body mb-3">
             <h4 class="card-title"><?php echo $post->title; ?></h4>
             <div class="bg-light p-2 mb-3">
-                Written by <?php echo $post->name; ?> On <?php echo $post->postCreated; ?>
+                Written by <strong><?php echo $post->name; ?></strong> On <?php echo $post->postCreated; ?>
             </div>
-            <p class="card-text"><?php echo $post->body; ?></p>
+            <h2 class="card-text"><?php echo $post->body; ?></h2>
             <a href="<?php echo URLROOT; ?>/posts/show/<?php echo $post->postID; ?>" class="btn btn-dark">
                 More
             </a>
