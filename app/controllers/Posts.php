@@ -102,7 +102,7 @@
                 //make sure no errors
                 if(empty($data['title_err']) && empty($data['body_err'])){
                     if($this->postModel->updatePost($data)){
-                        flash('post_updated',"Post Updated Successfully");
+                        flash('post_added',"Post Updated Successfully");
                         redirect("posts");
                     }else{
                         die("Something Went Wrong");
@@ -141,6 +141,24 @@
             ];
 
             $this->view('posts/show',$data);
+        }
+
+        public function delete($id){
+            if($_SERVER["REQUEST_METHOD"] == "POST"){
+                $post = $this->postModel->getPostById($id);
+
+                if($post->user_id != $_SESSION['user_id']){
+                    redirect('posts');
+                }
+                if($this->postModel->deletePost($id)){
+                    flash('post_added',"Post Removed Successfully");
+                    redirect("posts");
+                }else{
+                    die("Something Went Wrong");
+                }
+            }else{
+                redirect('posts');
+            }
         }
     }
 
