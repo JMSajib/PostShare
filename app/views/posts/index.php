@@ -17,7 +17,7 @@
                 Written by <strong><?php echo $post->name; ?></strong> On <?php echo $post->postCreated; ?>
             </div>
             <h2 class="card-text"><?php echo $post->body; ?></h2>
-            <a href="<?php echo URLROOT; ?>/posts/show/<?php echo $post->postID; ?>" class="btn btn-dark">
+            <a href="<?php echo URLROOT; ?>/posts/show/<?php echo $post->postId; ?>" class="btn btn-dark">
                 More
             </a>
         </div>
